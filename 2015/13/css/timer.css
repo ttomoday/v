@@ -1,0 +1,86 @@
+.countbox
+{
+	color: #000000;	
+	font-size: 35px;
+	height: 40px;
+	line-height: 82px;
+	margin: 0 auto;
+	padding: 0;
+	width: 210px;
+}
+.countbox .countbox-num
+{
+	float: left;
+}
+.countbox .countbox-space
+{
+	float: left;
+	height: 90px;
+	width: 8px;
+}
+.countbox-days1,.countbox-hours1,.countbox-mins1,.countbox-secs1,.countbox-days2,.countbox-hours2,.countbox-mins2,.countbox-secs2
+{	
+	background-repeat: no-repeat;
+	float: left;
+	height: 70px;
+	margin: 0 -4px 0 0;
+	text-align: center;
+	width: 26px;
+	z-index: 1;
+	padding-top: 13px;
+	font-weight: bold;
+}
+.countbox-days-text,.countbox-hours-text,.countbox-mins-text,.countbox-secs-text
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 14px !important;
+	margin-top: 85px;
+	position: absolute;
+	width: 55px;
+	color: #ffffff;	
+}
+.countbox-days-text:after
+{
+	content: "Дней";
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	margin-top: -32px;
+	text-align: center;
+}
+.countbox-hours-text:after
+{
+	content: "Часов";
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	margin-top: -32px;
+	text-align: center;
+}
+.countbox-mins-text:after
+{
+	content: "Минут";
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	margin-top: -32px;
+	text-align: center;
+}
+.countbox-secs-text:after
+{
+	content: "Секунд";
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	margin-top: -32px;
+	text-align: center;
+}
+.countbox-days1 span, .countbox-days2 span, .countbox-hours1 span, .countbox-hours2 span, .countbox-mins1 span, .countbox-mins2 span, .countbox-secs1 span, .countbox-secs2 span
+{
+	background-repeat: no-repeat;
+	display: block;
+	height: 89px;
+	position: absolute;
+	width: 25px;
+}

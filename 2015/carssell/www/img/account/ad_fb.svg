@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="67px" height="74px" viewBox="0 0 67 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook55</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="67" height="74"></rect>
+    </defs>
+    <g id="Acounts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop---User-cabinet---Profile-(Max-width:-1366px)" sketch:type="MSArtboardGroup" transform="translate(-960.000000, -550.000000)">
+            <g id="Sell-faster" sketch:type="MSLayerGroup" transform="translate(925.000000, 197.000000)">
+                <g id="facebook55" transform="translate(35.000000, 353.000000)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" id="Shape" fill="#15B95E" sketch:type="MSShapeGroup">
+                        <g transform="translate(26.000000, 46.000000)">
+                            <path d="M12.5116071,0.00493488448 L9.40081601,0 C5.90594895,0 3.64741233,2.29102012 3.64741233,5.83698136 L3.64741233,8.52822061 L0.519651067,8.52822061 C0.249375358,8.52822061 0.030509434,8.74486203 0.030509434,9.01208603 L0.030509434,12.911385 C0.030509434,13.178609 0.24962492,13.3950037 0.519651067,13.3950037 L3.64741233,13.3950037 L3.64741233,23.2341763 C3.64741233,23.5014003 3.86627826,23.717795 4.13655397,23.717795 L8.21739273,23.717795 C8.48766844,23.717795 8.70653436,23.5011536 8.70653436,23.2341763 L8.70653436,13.3950037 L12.3636168,13.3950037 C12.6338925,13.3950037 12.8527584,13.178609 12.8527584,12.911385 L12.8542558,9.01208603 C12.8542558,8.88377903 12.8025964,8.76090041 12.7110071,8.67009853 C12.6194179,8.57929666 12.4946368,8.52822061 12.3648646,8.52822061 L8.70653436,8.52822061 L8.70653436,6.24682351 C8.70653436,5.15029218 8.97082058,4.59363721 10.4155353,4.59363721 L12.5111079,4.59289698 C12.7811341,4.59289698 13,4.37625555 13,4.1092783 L13,0.488553563 C13,0.221823057 12.7813836,0.00542837292 12.5116071,0.00493488448 L12.5116071,0.00493488448 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

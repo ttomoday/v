@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблоны</title>
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">  
+  <link type="text/css" rel="stylesheet" href="font/rex-bold.css">
+  <link type="text/css" rel="stylesheet" href="css/global.css">    
+  <link type="text/css" rel="stylesheet" href="css/timer.css"> 
+  <link rel="stylesheet" href="css/sliding-style.css" type="text/css" media="screen"/> 
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/timer.js"></script>
+  <script type="text/javascript" src="main.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+</head>
+<body>  
+    <!-- /////////////////////////// Поп-ап \\\\\\\\\\\\\\\\\\\\\\\\ -->
+  <div class="center-980-pop">
+    <a href="#x" class="overlay-zvonokt" id="wind-zakaz-top"></a>  
+    <div class="popup-zvonokt">      
+      <a class="close" title="Закрыть" href="#close"></a>
+      <div class="wind-zakaz-top">
+        <p><span class="bold">Заказажите обратный звонок</p>
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Ваше имя">
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Ваш телефон">
+          <input class="s_text nameinp sinp" type="text" name="adress" placeholder="Ваш e-mail">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">                 
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="Отправить">
+        </form>
+      </div>       
+    </div> 
+  </div>
+  
+<!-- ////////////////////////// ШАПКА-ШАПКА-ШАПКА \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->  
+    <div class="header">
+      <a class="top-logo" href="index.php"><img alt="redecor" src="img/top-logo.png"></a>      
+      <p class="head-title">Название</p>      
+      <div class="phone">
+        <p class="number-tel"><span>+7 800</span> 000 00 00</p>
+        <a href="#wind-zakaz-top">ЗАКАЗАТЬ ЗВОНОК</a>
+      </div>
+    </div>
+
+    <div class="title-background">
+      <p>СТРОИТЕЛЬНО - ОТДЕЛОЧНАЯ КОМПАНИЯ</p>      
+    </div>
+
+    <div class="baner">     
+      <p class="baner-text">Закажи строительство дома до 31 августа<br>и получи дизайн фасада в подарок</p>
+      <p class="end-akcia">до конца акции осталось:</p>
+      <div class="timer">
+        <!--<div class="days-for-timer"><p class="conv-font" style="font-size: 35px; color: #000000;">00</p><p style="font-size: 13px;color: #fff;">Дней</p></div>-->
+        <div class="countbox"><div id="countbox1"> </div></div>       
+      </div> 
+      <div class="form1">
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+        </form>
+      </div>
+    </div> 
+
+    <div class="preimushchestva">
+      <p class="title" style="width: 335px;margin: -23px auto;">НАШИ ПРЕИМУЩЕСТВА</p>
+      <ul>
+        <li><img alt="redecor" src="img/preim1.png"><br>Бесплатный выезд<br>специалиста<br>и составление сметы</li>
+        <li><img alt="redecor" src="img/preim2.png"><br>Закупка материалов<br>по низким ценам</li>
+        <li><img alt="redecor" src="img/preim3.png"><br>Соблюдение сроков<br>выполнения работ</li>
+        <li><img alt="redecor" src="img/preim4.png"><br>Узкопрофильные<br>специалисты<br>только славяне</li>
+        <li><img alt="redecor" src="img/preim5.png"><br>100% гарантия<br>качества</li>
+      </ul>
+    </div>  
+
+    <p class="title">О КОМПАНИИ В ЦИФРАХ</p>
+    <div class="preim-numbers">          
+    </div>
+
+    <div class="wie-make">
+      <p class="title">НАШИ УСЛУГИ</p>
+      <ul>
+        <li><img alt="redecor" src="img/service1.png"><br>Строительство и ремонт домов под ключ</li>
+        <li><img alt="redecor" src="img/service2.png"><br>Ремонт и отделка<br>фасадов зданий</li>
+        <li><img alt="redecor" src="img/service3.png"><br>Ремонт фундамента</li>
+        <li><img alt="redecor" src="img/service4.png"><br>Ремонт и<br>обслуживание<br>кровли</li>
+        <li><img alt="redecor" src="img/service5.png"><br>Укладка напольных покрытий любой<br>сложности</li>
+        <li><img alt="redecor" src="img/service6.png"><br>Отделка стен </li>
+        <li><img alt="redecor" src="img/service7.png"><br>Устройство потолков любой сложности</li>
+        <li><img alt="redecor" src="img/service8.png"><br>Электротехнические работы</li>
+        <li><img alt="redecor" src="img/service9.png"><br>Сантехнические работы </li>
+      </ul>
+    </div>
+
+    <div class="top-slider">
+        <div id="content">            
+          <div id="wrapper">
+            <div id="steps">                    
+              <fieldset class="step">
+                <object styleid="videoplayer995" type="application/x-shockwave-flash" data="player/uppod-video.swf" width="590" height="377"><param name="bgcolor" value="#ffffff" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="movie" value="player/uppod-video.swf" /><param name="flashvars" value="comment=&amp;st=styles/video171-1022.txt&amp;file=../video/video1.flv" /></object>  
+              </fieldset>
+              <fieldset class="step">
+                <img alt="redecor"  src="img/vid-premer2.png">  
+              </fieldset>
+              <fieldset class="step">
+                <object styleid="videoplayer995" type="application/x-shockwave-flash" data="player/uppod-video.swf" width="590" height="377"><param name="bgcolor" value="#ffffff" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="movie" value="player/uppod-video.swf" /><param name="flashvars" value="comment=&amp;st=styles/video171-1022.txt&amp;file=../video/video2.flv" /></object>
+              </fieldset>
+              <fieldset class="step">
+                <img alt="redecor"  src="img/vid-premer4.png">  
+             </fieldset>
+             <fieldset class="step">
+                <object styleid="videoplayer995" type="application/x-shockwave-flash" data="player/uppod-video.swf" width="590" height="377"><param name="bgcolor" value="#ffffff" /><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="movie" value="player/uppod-video.swf" /><param name="flashvars" value="comment=&amp;st=styles/video171-1022.txt&amp;file=../video/video3.flv" /></object>
+             </fieldset> 
+             <fieldset class="step">
+                <img alt="redecor"  src="img/vid-premer6.png">  
+             </fieldset>                  
+            </div>
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#"><img alt="redecor"  src="img/video1.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img alt="redecor"  src="img/video2.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img alt="redecor"  src="img/video3.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img alt="redecor"  src="img/video4.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img alt="redecor"  src="img/video5.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img alt="redecor"  src="img/video6.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  </div> 
+
+  <div class="form-zamershichik">
+    <div class="free-zamer">
+      <p>оставьте заявку на бесплатный выезд замерщика</p>
+    </div>
+    <div class="form1">
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+        </form>
+    </div>
+  </div>
+
+  <hr style="margin-top: 30px;">  
+  <div class="photos">
+    <p class="title"  style="background: none;">ФОТОГАЛЕРЕЯ</p>
+    <br>
+    <div class="shadow-block" style="padding-left:0px;">
+          <div class="t">
+            <div class="b">
+              <div class="m">
+                <div class="m">
+                  <div class="t">
+                    <div class="t">
+                      <div class="b">
+                        <div class="b">
+                          <div class="carousel-wrapper"> 
+                            <div class="carousel-items"> 
+                              <div class="carousel-block">                 
+                                <a href="#image1" title="Увеличить"><img alt="redecor"  src="images/1.png"></a>
+                              </div>
+                              <div class="carousel-block">                 
+                                <a href="#image2" title="Увеличить"><img alt="redecor"  src="images/2.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image3" title="Увеличить"><img alt="redecor"  src="images/3.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image4" title="Увеличить"><img alt="redecor"  src="images/4.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image5" title="Увеличить"><img alt="redecor"  src="images/5.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image6" title="Увеличить"><img alt="redecor"  src="images/6.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image7" title="Увеличить"><img alt="redecor"  src="images/7.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image8" title="Увеличить"><img alt="redecor"  src="images/8.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image9" title="Увеличить"><img alt="redecor"  src="images/9.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image10" title="Увеличить"><img alt="redecor"  src="images/10.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image11" title="Увеличить"><img alt="redecor"  src="images/11.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image12" title="Увеличить"><img alt="redecor"  src="images/12.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image13" title="Увеличить"><img alt="redecor"  src="images/13.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image14" title="Увеличить"><img alt="redecor"  src="images/14.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image15" title="Увеличить"><img alt="redecor"  src="images/15.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image16" title="Увеличить"><img alt="redecor"  src="images/16.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image17" title="Увеличить"><img alt="redecor"  src="images/17.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image18" title="Увеличить"><img alt="redecor"  src="images/18.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image19" title="Увеличить"><img alt="redecor"  src="images/19.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image20" title="Увеличить"><img alt="redecor"  src="images/20.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image21" title="Увеличить"><img alt="redecor"  src="images/21.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image22" title="Увеличить"><img alt="redecor"  src="images/22.png"></a>
+                              </div>
+                              <div class="carousel-block">  
+                                <a href="#image23" title="Увеличить"><img alt="redecor"  src="images/23.png"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+    <a href="#x" class="overlay" id="image1"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/1b.jpg">        
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image2"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/2b.jpg">        
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="imag3"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>                 
+        <img alt="redecor" src="images/BIG-PHOTOS/3b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image4"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/4b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image5"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/5b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image6"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/6b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image7"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/7b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image8"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/8b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image9"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/9b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image10"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/10b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image11"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/11b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image12"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/12b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image13"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/13b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image14"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/14b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image15"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/15b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image16"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/16b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image17"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/17b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image18"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/18b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image19"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/19b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image20"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/20b.jpg">
+    </div>      
+    </div>
+
+    <a href="#x" class="overlay" id="image21"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/21b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image22"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/22b.jpg">
+    </div>      
+    </div>
+
+ <a href="#x" class="overlay" id="image23"></a>
+  <div class="popup">    
+      <div class="feedbackf">
+        <a class="closef" title="Закрыть" href="#close"></a>         
+        <img alt="redecor" src="images/BIG-PHOTOS/23b.jpg">
+    </div>      
+    </div>
+
+</div>
+<br>
+<hr>
+
+  <div class="how-we-work">
+    <p class="title">КАК МЫ РАБОТАЕМ</p>
+  </div>
+
+  <div class="baner">       
+      <p class="baner-text">Закажи строительство дома до 31 августа<br>и получи дизайн фасада в подарок</p>
+      <p class="end-akcia">до конца акции осталось:</p>
+      <div class="timer">
+        <!--<div class="days-for-timer"><p class="conv-font" style="font-size: 35px; color: #000000;">00</p><p style="font-size: 13px;color: #fff;">Дней</p></div>-->
+        <div class="countbox"><div id="countbox1"> </div></div>       
+      </div> 
+      <div class="form1">
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+        </form>
+      </div>
+    </div> 
+
+    <br>
+    <hr>
+    <div class="preimushestva"> 
+      <div class="pr-left">
+        <p class="p-pr-left">более 80 процентов клиентов<br>сталкиваются с проблемами:</p>
+        <ul>
+          <li><img alt="redecor" src="img/no.png"><p>Работы производят не существующие<br>«мастера на все руки»</p></li>
+          <li><img alt="redecor" src="img/no.png"><p>Работы производятся без заключения<br>договора</p></li>
+          <li><img alt="redecor" src="img/no.png"><p>Не соблюдаются сроки выполнения работ</p></li>
+          <li><img alt="redecor" src="img/no.png"><p>Приходится самостоятельно заниматься<br>снабжением материалов, теряя свое личное время</p></li>
+          <li><img alt="redecor" src="img/no.png"><p>Берётся предоплата за работы, которая еще не<br>выполнялась</p></li>
+        </ul>
+      </div>
+      <div class="pr-right">
+        <p class="p-pr-right">КАК РАБОТАЕМ МЫ:</p>
+        <ul>
+          <li><img alt="redecor" src="img/yes.png"><p>Узкопрофильные специалисты, только славяне</p></li>
+          <li><img alt="redecor" src="img/yes.png"><p>Работа по договору с прописаной<br>ответственностью</p></li>
+          <li><img alt="redecor" src="img/yes.png"><p>Технический надзор и контроль каждого<br>этапа работ</p></li>
+          <li><img alt="redecor" src="img/yes.png"><p>Закупка, доставка и прием материалов на объект</p></li>
+          <li><img alt="redecor" src="img/yes.png"><p>Оплата только по факту выполненных<br>работ с шагом в две недели</p></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="reviws">        
+    <p class="title" style="background: none;">ОТЗЫВЫ</p>
+    <div class="reviw">
+      <div class="reviw-left">
+        <!--<img alt="redecor" src="img/reviw-avatar1.png" alt="Сухие пайки">-->
+      </div>
+      <div class="reviw-right">
+        <p>Добрый день! Хотим с мужем выразить огромную благодарность вашей компании за произведенные работы! Нужен был евроремонт двухкомнатной квартиры под ключ. Все сделали качественно и точно в срок, следуя нашему дизайн-проекту. Весь мусор был вывезен, мы просто въехали в новую квартиру. Всем советуем!"
+<br><br>
+<span class="color-blue">Оксана и Даниил, Москва</span> </p>
+        
+      </div>
+    </div>
+    <div class="reviw">
+      <div class="reviw-left">
+        <!--<img alt="redecor" src="img/reviw-avatar2.png" alt="Сухие пайки">-->
+      </div>
+      <div class="reviw-right">
+        <p>«Нам отремонтировали детскую комнату за 1,5 недели! Очень квалифицированные мастера! Сделали стяжку, выровняли стены, поклеили обои, постелили ламинат, покрасили потолок! Всё за собой убрали и ничего не поломали чего мы очень опасались! Мы остались всем очень довольны! Спасибо вашей компании! Удачи и процветания!»
+
+<br><br>
+<span class="color-blue">Игорь и Наталья, Москва</span> </p>
+        
+      </div>
+    </div>
+    <div class="reviw">
+      <div class="reviw-left">
+        <!--<img alt="redecor" src="img/reviw-avatar3.png" alt="Сухие пайки">-->
+      </div>
+      <div class="reviw-right">
+        <p>«Здравствуйте! Решил отремонтировать загородный дом из оцилиндрованого бруса который был построен частными мастерами на скорую руку, и спустя некоторое время начались проблемы: стали  появляться щели, повело двери, полы, лестницы и много другое! Обратился в эту компанию приехал специалист все осмотрел, замерил! В итоге состояние катастрофическое, провисание пола в центре здание превышало 10 см, в связи с отсутствием промежуточного фундамента! Ребята оперативно приступили к работе, всё демонтировали, залили фундамент, в процессе работы мы даже умудрялись приезжать отдыхать все очень чисто и аккуратно управились вместе с отделочными работами за 4 месяца! Очень благодарен вашей компании! В этом году буду ремонтировать фасад здания у них же! Всем советую!»
+<br><br>
+<span class="color-blue">Игорь, Москва.</span> </p>
+        
+      </div>
+    </div>
+    <div class="reviw">
+      <div class="reviw-left">
+        <!--<img alt="redecor" src="img/reviw-avatar4.png" alt="Сухие пайки">-->
+      </div>
+      <div class="reviw-right">
+        <p>«Спасибо большое Вашей компании за ремонт моей дачи! Теперь проводим там и зимние каникулы тоже!»
+<br><br>
+<span class="color-blue">Екатерина, Москва</span> </p>        
+      </div>
+    </div>          
+    </div>
+
+    <hr> 
+
+  <div class="form-zamershichik">
+    <div class="free-zamer">
+      <p>оставьте заявку на бесплатный выезд замерщика</p>
+    </div>
+    <div class="form1">
+        <form class="s_form" action="index1.php" method="POST">          
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Введите ваше имя">          
+          <input class="s_text phoneinp sinp" type="text" name="phone" placeholder="Введите ваш телефон">
+          <input type="hidden"  name="mail" class="email" value="none@none.ru">
+          <input type="hidden"  name="adress" class="email" value="none">          
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input class="s_submit" type="button" value="ЗАКАЗАТЬ">
+        </form>
+    </div>
+  </div>
+    <hr class="bottom-zamershchik">
+    <div class="footer">
+      <a class="top-logo" href="index.php"><img alt="redecor" src="img/top-logo.png"></a>      
+      <p class="head-title">Название кампание</p>      
+      <div class="phone">
+        <p class="number-tel"><span>+7 800</span> 000 00 00</p>
+        <a href="#wind-zakaz-top">ЗАКАЗАТЬ ЗВОНОК</a>
+      </div>
+      <p style="float: left; color: #00B0EC;">&copy; 2013 Все права защищены</p><p>
+     
+    </div> 
+    <script src="js/jquery.countdown.js"></script>
+  </body>
+</html>

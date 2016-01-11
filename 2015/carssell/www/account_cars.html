@@ -1,0 +1,517 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>User account</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		
+		<!-- SECTION HEADER -->
+		<section class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<div class="logo">
+							<a href="#">
+								<img src="img/logo_big.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-sx-12 col-sm-3 col-md-2 pull-right header-controls">
+						<a href="" class="sell-car">
+							<img src="img/car_white.svg" alt="">
+							<span> Sell car</span>
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2 pull-right header-controls">
+						<a href="#" class="users-acc">
+							<div>
+								<div class="avatar-small">
+									<img src="img/avatar.png" alt="">
+								</div>
+								<span>Ruslan's account</span>
+								<div class="arrow-down"></div>
+							</div>
+						</a>
+					</div>
+
+			</div>
+		</section>
+
+		<section id="account-menu">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 col-lg-10 col-lg-offset-1">
+						<div class="clearfix">
+
+							<a href="#" class="menu-controls pull-left" id="profile-menu-controls"><span>Profile menu</span></a>
+							<a href="#" class="users-acc mobile pull-right">
+								<div>
+									<div class="avatar-small">
+										<img src="img/avatar.png" alt="">
+									</div>
+									<span>Ruslan</span>
+									<div class="arrow-down white"></div>
+								</div>
+							</a>
+
+						</div>
+						<ul id="profile-menu">
+							<li><a href="#">Profile</a></li>
+							<li class="active"><a href="#">Cars</a></li>
+							<li><a href="#">Watchlist</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="profile-cars">
+			<div class="container-fluid">
+				
+				<!-- Advanced search -->
+				<div class="row">
+					<div class="col-md-12 col-lg-10 col-lg-offset-1 advanced-search-top">
+						<form action="#">
+							<input type="text" placeholder="Search (Brand, Model, Ref)">
+							<button type="submit"></button>
+						</form>
+					</div>
+					
+					<div class="col-md-12 col-lg-10 col-lg-offset-1 advanced-search-wrapper">
+						<div class="advanced-search clearfix">
+							<button class="button button-brown advanced-search-btn pull-right" id="advanced-search-open">Advanced search</button>
+
+							<!-- Search form -->
+							<form id="search-form">
+								<div class="form-group">
+									<select>
+									  	<option>Brand</option>
+									  	<option>Brand 2</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select>
+									  	<option>Model</option>
+									  	<option>Model 2</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<select>
+									  	<option>Color</option>
+									  	<option>Color 2</option>
+									</select>
+								</div>
+								
+								<div class="form-group text-center">
+								<hr>
+									<p>Year</p>
+									<div class="range-slider"></div>
+									<input type="text" class="range-input" id="minYear" value="0">
+									<span>to</span>
+									<input type="text" class="range-input" id="maxYear" value="1000">
+								</div>
+
+								<div class="form-group text-center">
+								<hr>
+									<p>Millage</p>
+									<div class="range-slider"></div>
+									<input type="text" class="range-input" id="minMillage" value="0">
+									<span>to</span>
+									<input type="text" class="range-input" id="maxMillage" value="1000">
+									<span class="">Kms</span>
+								</div>
+
+								<div class="form-group text-center">
+								<hr>
+									<p>Price</p>
+									<div class="range-slider"></div>
+									<input type="text" class="range-input" id="minPrice" value="0">
+									<span>to</span>
+									<input type="text" class="range-input" id="maxPrice" value="1000">
+									<span class="">Dhs</span>
+
+								</div>
+
+								<button type="submit" class="button advanced-search-btn"><span>Search</span></button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					
+					<div class="col-md-12 col-lg-10 col-lg-offset-1">
+						
+						<table>
+							<tr class="table-header">
+								<td>
+									<span>Ref. No</span>
+									<div class="cars-search"></div>
+								</td>
+								<td>
+									<span>Car photos</span>
+
+									<div class="cars-photo-not"></div>
+									<div class="cars-photo"></div>
+
+								</td>
+								<td>
+									<span>Brand</span>
+									<div class="cars-search"></div>
+								</td>
+								<td>
+									<span>Model</span>
+									<div class="cars-search"></div>
+								</td>
+								<td>
+									<span>Year</span>
+									<div class="cars-sort"></div>
+								</td>
+								<td>
+									<span>Price</span>
+									<div class="cars-sort"></div>
+								</td>
+								<td>
+									<span>Status</span>
+									<div class="cars-sort"></div>
+								</td>
+								<td>
+									<span>Action</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-green"></div>
+									<select class="listed-green">
+									  	<option>Listed</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+
+								<!-- Blocks for mobile version -->
+
+								<!-- Block info -->
+								<td class="cars-info-btn"></td>
+								<td class="cars-info-block">
+									<table>
+										<tr>
+											<td>Yeadr</td>
+											<td>2015</td>
+										</tr>
+										<tr>
+											<td>Color</td>
+											<td>White</td>
+										</tr>
+										<tr>
+											<td>Kilometer</td>
+											<td>15 000</td>
+										</tr>
+										<tr>
+											<td>Price</td>
+											<td>AED 800 000</td>
+										</tr>
+										<tr>
+											<td>Warranty</td>
+											<td>No warranty</td>
+										</tr>
+									</table>
+									<div class="cars-refNo">
+										<span class="ref-title">Ref. No</span>
+										<span>p_000111</span>
+										<a href="#" class="cars-link"></a>
+									</div>
+									<div class="cars-block-close"></div>
+								</td>
+
+								<!-- Block settings -->
+								<td class="cars-settings-btn"></td>
+								<td class="cars-settings-block">
+									<button class="button button-yellow">Eddit car</button>
+									<button class="button button-grey-dark">Unpublish</button>
+									<button class="button button-grey-dark">Sold</button>
+									<div class="cars-block-close"></div>
+								</td>
+
+								<!-- Bottom info -->
+								<td class="cars-bottom-info clearfix">
+									<span>Aston Martin</span>
+									<span>VARNISH</span>
+									<span class="pull-right cars-status cars-oval-green"></span>
+								</td>
+
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-green"></div>
+									<select class="listed-green">
+									  	<option>Listed</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+
+								<!-- Blocks for mobile version -->
+
+								<!-- Block info -->
+								<td class="cars-info-btn"></td>
+								<td class="cars-info-block">
+									<table>
+										<tr>
+											<td>Yeadr</td>
+											<td>2015</td>
+										</tr>
+										<tr>
+											<td>Color</td>
+											<td>White</td>
+										</tr>
+										<tr>
+											<td>Kilometer</td>
+											<td>15 000</td>
+										</tr>
+										<tr>
+											<td>Price</td>
+											<td>AED 800 000</td>
+										</tr>
+										<tr>
+											<td>Warranty</td>
+											<td>No warranty</td>
+										</tr>
+									</table>
+									<div class="cars-refNo">
+										<span class="ref-title">Ref. No</span>
+										<span>p_000111</span>
+										<a href="#" class="cars-link"></a>
+									</div>
+									<div class="cars-block-close"></div>
+								</td>
+
+								<!-- Block settings -->
+								<td class="cars-settings-block">
+									<button class="button button-yellow">Eddit car</button>
+									<button class="button button-grey-dark">Unpublish</button>
+									<button class="button button-grey-dark">Sold</button>
+									<div class="cars-block-close"></div>
+								</td>
+
+								<!-- Bottom info -->
+								<td class="cars-bottom-info clearfix">
+									<span>Aston Martin</span>
+									<span>VARNISH</span>
+									<span class="pull-right cars-status cars-oval-green"></span>
+								</td>
+
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-green"></div>
+									<select class="listed-green">
+									  	<option>Listed</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-green"></div>
+									<select class="listed-green">
+									  	<option>Listed</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-yellow"></div>
+									<select class="listed-green">
+									  	<option>Pending</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-red"></div>
+									<select class="listed-green">
+									  	<option>Sold</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-black"></div>
+									<select class="listed-green">
+									  	<option>Moderation</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-black"></div>
+									<select class="listed-green">
+									  	<option>Moderation</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+							</tr>
+							<!-- Spacer -->
+							<tr class="row-spacer">
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td class="cars-ref"><span>auto_1100</span></td>
+								<td class="cars-img"><img src="img/account_cars/cars_example.png" alt="car"></td>
+								<td><span>Aston Martin</span></td>
+								<td><span>Varnish</span></td>
+								<td><span>2015</span></td>
+								<td><span>AED 1 900 000</span></td>
+								<td class="cars-status">
+									<div class="cars-oval cars-oval-black"></div>
+									<select class="listed-green">
+									  	<option>Moderation</option>
+									  	<option>Listed 2</option>
+									</select>
+								</td>
+								<td class="cars-settings"><div class="cars-gear"></div></td>
+							</tr>
+							
+						</table>
+					</div>
+
+					<!-- TABLE Mobile version -->
+					<div class="col-xs-12">
+						
+					</div>
+
+					<!-- Bottom controls -->
+					<div class="col-xs-6 bottom-control">
+						<a href="#" class="explore-cars">
+							<img src="img/search_icon.svg" alt="">
+							<span>Explore cars</span>
+						</a>
+					</div>
+					<div class="col-xs-6 bottom-control">
+						<a href="#" class="sell-car">
+							<img src="img/car_white.svg" alt="">
+							<span>Sell car</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+		
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

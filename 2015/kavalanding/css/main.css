@@ -1,0 +1,269 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,700,400&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* { 
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+body, html {
+	height: 100%;
+}
+
+.row {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.overhidden {
+	overflow: hidden;
+}
+
+.full-height {
+	min-height: 100%;
+}
+
+.parallax-item {
+	width: 100%;
+	/*background-attachment: fixed !important;*/
+	/*background-repeat: no-repeat !important;*/
+}
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+
+.border-left { border-left: 5px solid #f1c40f; }
+.border-right {	border-right: 5px solid #f1c40f; }
+
+.link {
+	padding: 0.8em 2.5em;
+	background: #f39c12;
+	border: none;
+	color: #fff;
+	font-weight: 400;
+	margin: 1em auto;
+	display: inline-block;
+	border-radius: 3px;
+}
+.link:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #f1c40f;
+	border-color: #f1c40f;
+}
+.link:active {
+	color: #f1c40f;
+
+	text-decoration: none;
+}
+
+/* ===============
+   Patifon
+   =============== */
+
+#main {
+	background: url(../img/bg_coffee_big_o.jpg);
+	background-size: cover !important;
+	color: #fff;
+	padding: 5%;
+	text-align: center;
+	height: calc(100% + 150px);
+}
+	#main h1, #main h3 {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+	}
+	#main h1 {
+		font-size: 6em;
+		margin: 1em auto;
+		text-transform: uppercase;
+	}
+
+	#main h3 {
+		/*color: #c0392b;*/
+	}
+
+	#main img {
+		width: 300px;
+		max-width: 90%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#main .go {
+		border: 1px solid #fff;
+		color: #fff;
+		border-radius: 3px;
+	}
+
+
+/* ===============
+   delux
+   =============== */
+
+#delux {
+	padding: 2%;
+	text-align: center;
+	margin-top: -180px;
+}
+
+	#delux h1 {
+		font-family: 'Lobster', cursive;
+		font-weight: 400;
+		color: #6d4c41;
+		margin: 1.5em auto 1em;
+	}
+
+	.delux-content {
+		background: #eee;
+		padding: 15px 70px;
+		border-top: 10px #f1c40f solid;
+		position: relative;
+	}
+
+	.delux-content:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 50%;
+		margin-left: -15px;
+		background: url(../img/coffee_cup.png);
+		background-size: cover;
+
+		width: 30px;
+		height: 30px;
+	}
+
+/* ===============
+   sorts
+   =============== */
+
+#sorts {
+	padding: 5%;
+	background: url(../img/bg_concrete.png);
+	color: #fff;
+	text-align: center;
+}
+	#sorts h1 {
+		font-family: 'Lobster', cursive;
+		font-weight: 400;
+		color: #6d4c41;
+	}
+
+	.sort {
+		color: #6d4c41;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		background: #fff;
+		border-left: 5px #f1c40f solid;
+
+		width: 90%;
+		margin: 25px auto;
+		padding: 4%;
+		position: relative;
+	}
+	
+	.sort:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -15px;
+		left: 50%;
+		margin-left: -15px;
+		background: url(../img/coffee_bean.png);
+		background-size: cover;
+
+		width: 30px;
+		height: 30px;
+	}
+
+	.sort img {
+		width: 80%;
+	}
+
+	.sort p {
+		font-weight: 400;
+	}
+
+/* ===============
+   visit
+   =============== */
+
+#visit {
+	padding: 5%;
+	background: url(../img/bg_visit.png);
+	background-position: 50% 50%;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+
+}
+
+	#visit h1 {
+		font-weight: 300;
+	}
+
+/* ===============
+   maschines
+   =============== */
+
+#maschines {
+	padding: 5%;
+	background: #eee;
+	text-align: center;
+}
+
+#maschines h1 {
+	font-family: 'Lobster', cursive;
+	font-weight: 400;
+	color: #6d4c41;
+	margin: 1.5em auto 1em;
+}
+
+.maschine img {
+	width: 300px;
+	height: auto;
+}
+
+.maschine div {
+	padding: 5%;
+}
+
+/* ===============
+   more
+   =============== */
+
+#more {
+	padding: 5%;
+	text-align: center;
+}
+
+/* ===============
+   Google maps
+   =============== */
+
+#map-canvas {
+    width: 100%;
+    height: 400px;
+    background-color: #CCC;
+  }
+
+
+/* ===============
+   footer
+   =============== */
+footer {
+	background: #222;
+	text-align: center;
+	padding: 50px 0;
+	color: #666;
+}
+
+	footer h3, footer h4 {
+		font-weight: 100;
+	}

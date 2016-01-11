@@ -1,0 +1,499 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #000;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+h1 {
+    font-family: "Pacifico", OpenSans;
+    font-size: 36pt;
+}
+
+p {
+	color: #8C8C8C;
+}
+.wrapper {
+    max-width: 1140px; /* 1140px - 10% for margins */
+    width: 96%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.column2 {
+    width: 50%;
+    float: left;
+}
+.column3 {
+    width: 33.33%;
+    float: left;
+}
+
+/* ===============================================
+    HEADER
+   =============================================== */
+#header {
+	border-top: 10px solid #2ecc71;
+	width: 100%;
+	background: url('../img/bg_header.png');
+	background-size: cover;
+}
+#header > .wrapper {display: flex;}
+.header-left {
+	padding: 8% 0 8% 120px;
+}
+.header-left > h1, .header-left > p {
+	color: #fff;
+}
+.header-left > ul {padding: 0;}
+.header-left > ul > li{
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	margin-right: 4px;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-image: url(../img/icons_header.png);
+}
+	.header-left > ul > li:hover {background-color: #2ecc71;}
+	.header-left > ul > li:nth-child(2) {background-position: -52px 0}
+	.header-left > ul > li:nth-child(3) {background-position: -104px 0}
+
+	.header-left > ul > li > a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+.header-right {
+	background: url(../img/hand.png) no-repeat bottom;
+	background-size: auto 100%;
+}
+
+/* ==========================================
+    FEATURES
+   ========================================== */
+#features {
+	width: 100%;
+	padding: 2em 0;
+	text-align: center;
+}
+
+.feature-icon {
+	width: 98px;
+	height: 98px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: #2ecc71;
+	background-image: url(../img/icons_features.png);
+}
+.flat {background-position: -98px 0}
+.reach {background-position: -196px 0}
+
+/* ==========================================
+    NOTIFIED
+   ========================================== */
+#notified {
+	width: 100%;
+	padding: 3em 0;
+	background: #e3e3e3;
+}
+#notified h2 {
+	margin-top: 0;
+}
+#notified img {
+	width: 96%;
+	float: right;
+}
+
+#notified form {
+    margin: 20px 0;
+}
+
+#notified input {
+    padding: 1em;
+    display: inline-block;
+    margin: 0;
+    border: 0px;
+    outline: 0;
+    box-shadow: none;
+}
+
+input[type="email"] {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 40%;
+}
+
+input[type="submit"] {
+    background-color: #2ecc71;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    width: 20%;
+}
+
+input[type="submit"]:hover {
+    background-color: #61DC95;
+}
+/* ==========================================
+    TESTIMONIALS
+   ========================================== */
+#testimonials {
+    position: relative;
+}
+.testimonial {
+    max-width: 880px;
+    width: 96%;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+.hide {display: none;}
+
+/* Testimonial people icons */
+#testimonials ul {
+    width: 9999px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.thumbs {
+    width: 100%;
+    height: 50px;
+    margin: 220px auto 0;
+    overflow: hidden;
+}
+#testimonials ul li {
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/people.png);
+    background-position: 0 0;
+}
+#testimonials ul li:nth-child(2) {background-position: -55px 0}
+#testimonials ul li:nth-child(3) {background-position: -110px 0}
+#testimonials ul li:nth-child(4) {background-position: -165px 0}
+#testimonials ul li:nth-child(5) {background-position: -220px 0}
+#testimonials ul li:nth-child(6) {background-position: -275px 0}
+#testimonials ul li:nth-child(7) {background-position: -330px 0}
+#testimonials ul li:nth-child(8) {background-position: -385px 0}
+#testimonials ul li:nth-child(9) {background-position: -440px 0}
+#testimonials ul li:nth-child(10) {background-position: -495px 0}
+#testimonials ul li:nth-child(11) {background-position: -550px 0}
+#testimonials ul li:nth-child(12) {background-position: -605px 0}
+#testimonials ul li:nth-child(13) {background-position: -660px 0}
+#testimonials ul li:nth-child(14) {background-position: -715px 0}
+#testimonials ul li:nth-child(15) {background-position: -770px 0}
+#testimonials ul li:nth-child(16) {background-position: -825px 0}
+#testimonials ul li:nth-child(17) {background-position: -880px 0}
+#testimonials ul li:nth-child(18) {background-position: -935px 0}
+#testimonials ul li:nth-child(19) {background-position: -990px 0}
+#testimonials ul li:nth-child(20) {background-position: -1045px 0}
+#testimonials ul li:nth-child(21) {background-position: -1100px 0}
+
+#testimonials ul li:hover::before {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #009500;
+    content: "";
+    top: 0px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+    GETINTOUCH
+   ========================================== */
+#getintouch {
+	width: 100%;
+	padding: 2em 0;
+	text-align: center;
+}
+
+#getintouch h2, p {
+	display: block;
+}
+
+.social {
+	display: block;
+	margin: 0 auto;
+}
+
+.socicon {
+	width: 34px;
+	height: 34px;
+	margin: 5px;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #e3e3e3;
+	background-image: url(../img/social.png);
+}
+
+.socicon:hover {
+	background-color: #2ecc71;
+}
+
+.facebook {background-position: -34px 0}
+.pinterest {background-position: -68px 0}
+.google {background-position: -102px 0}
+.linkedin {background-position: -136px 0}
+.youtube {background-position: -170px 0}
+
+/* ==========================================
+    FOOTER
+   ========================================== */
+footer {
+	width: 100%;
+	background-color: #e3e3e3; 
+}
+
+footer ul {
+    display: block;
+    padding: 3em 0;
+    text-align: center;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+footer ul li a {
+    color: #8C8C8C;
+    text-decoration: none;
+    display: block;
+    padding: 0 19px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+    .column3 {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .column2 {
+        width: 96%;
+    }
+    .header-right {display: none;}
+    .testimonial {top: 10px;}
+}
+
+@media only screen and (max-width: 480px) {
+    .header-left {
+        padding: 8% 0 8% 15px;
+    }
+    html {font-size: 0.8em;}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
