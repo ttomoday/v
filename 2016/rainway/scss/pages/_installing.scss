@@ -1,0 +1,47 @@
+.video_instruction {
+	color: $bg_main_white;
+	background: $bg_main_blue;
+	&.row {
+		max-width: 100%;
+	}
+	.video {
+		position: relative;
+		padding-bottom: 45%;
+	}
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+.step_by_step,
+.installing_errors {
+	padding-top: 70px;
+	.s_title {
+		padding-right: 115px;
+	}
+	ul {
+		margin-bottom: 85px;
+	}
+	li {
+		display: inline-block;
+		width: 270px;
+		margin: 12px;
+		vertical-align: top;
+		img {
+			width: 100%;
+		}
+		small {
+			display: block;
+			margin-top: 25px;
+		}
+	}
+}
+
+.installing_errors {
+	padding-bottom: 115px;
+}

@@ -1,0 +1,20 @@
+.p_styles {
+	.styles .row {
+		max-width: 100%;
+	}
+	.social_networks {
+		position: relative;
+		margin: 50px 0;
+		text-align: left;
+		li {
+			width: auto;
+			margin-right: 30px;
+		}
+		a {
+			color: $bg_main_blue;
+			&:hover { color: $color_main_orange; }
+		}
+	}
+}
+
+.thin_title { font-weight: 300; }

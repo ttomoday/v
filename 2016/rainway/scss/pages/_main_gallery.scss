@@ -1,0 +1,166 @@
+.p_main_gallery {
+	.main_gallery_item {
+		padding: 25% 0 5%;
+	}
+}
+.main_gallery_item {
+	clear: both;
+	color: #fff;
+	@extend %colored_bg;
+	&.item_1 {
+		background: url(../content/gallery/gallery_1.jpg) no-repeat center 20% ;
+		background-size: cover;
+	}
+	&.item_2 {
+		background: url(../content/gallery/gallery_2.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&.item_3 {
+		background: url(../content/gallery/gallery_3.jpg) no-repeat center;
+		background-size: cover;
+	}
+	a {
+		position: relative;
+		display: block;
+		padding: 0 15px;
+		border: 1px solid $color_main_orange;
+		line-height: 466.66667%;
+		color: #fff;
+		&:after {
+			content: '+';
+			position: absolute;
+			right: 0; bottom: 0;
+			width: 48px;
+			line-height: 48px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 300;
+			background: $color_main_orange;
+			cursor: pointer;
+		}
+	}
+}
+
+.p_gallery,
+.p_news {
+	overflow-x: hidden;
+	.row {
+		max-width: 100%;
+	}
+	.p_gallery_main,
+	.p_news_main {
+		position: relative;
+	}
+	.main,
+	.gallery_nav,
+	.news_nav {
+		.s_title {
+			margin-top: 0;
+			margin-bottom: 45px;
+			line-height: 1;
+		}
+	}
+	.main {
+		padding-top: 92px;
+		padding-bottom: 200px;
+	}
+	.gallery_nav,
+	.news_nav {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 120px 0 17%;
+		background: $color_main_orange;
+		.aside_bunner {
+			position: absolute;
+			bottom: 0;
+			left: 0; right: 0;
+			img {
+				width: 100%;
+			}
+		}
+		.main_gallery_item a {
+			border: 0;
+			line-height: 1;
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+	}
+}
+.gallery_wrapper {
+	font-size: 0;
+}
+
+.p_gallery {
+	.group {
+		@extend %zoom;
+		display: block;
+	}
+}
+
+.main .nav_toggle {
+	text-align: right;
+	display: none;
+}
+
+.gallery_nav_toggle {
+	color: $bg_main_blue;
+	&:after {
+		color: $color_main_orange;
+		font-size: 150%;
+	}
+}
+
+.gallery_nav .nav_toggle {
+	display: block;
+	.gallery_nav_toggle:after {
+		display: none;
+	}
+}
+
+.gallery_nav_toggle {
+	line-height: 250%;
+	vertical-align: middle;
+	&:hover { text-decoration: none; }
+}
+
+@media #{$small-only} {
+	.p_gallery .main,
+	.p_news .main {
+		padding-top: 7%;
+		padding-bottom: 7%;
+	}
+	.main .nav_toggle {
+		display: block;
+	}
+	.gallery_nav {
+		left: 100%;
+		@include transition(all 0.3s ease 0s);
+		&.opened {
+			left: 33.3333%;
+		}
+		.nav_toggle {
+			position: relative;
+			display: block;
+			.gallery_nav_toggle {
+				padding-right: 60px;
+				&:after {
+					content: 'x';
+					position: absolute;
+					display: block;
+					top: 0;
+					right: 25px;
+					font-size: 100%;
+				}
+			}
+		}
+	} 
+	.p_gallery .gallery_nav,
+	.p_gallery .news_nav,
+	.p_news .gallery_nav,
+	.p_news .news_nav {
+		padding-top: 7%;
+		padding-bottom: 7%;
+	}
+}
