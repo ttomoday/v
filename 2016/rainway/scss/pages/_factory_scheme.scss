@@ -184,6 +184,8 @@
 		@include opacity(0);
 		@include transform(translateY(50px));
 		@include transition(all 0.5s);
+		margin-left: 15px !important;
+		min-width: 300px;
 	}
 	.count {
 		@extend %sqrt_button;
