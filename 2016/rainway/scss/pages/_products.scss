@@ -1,0 +1,100 @@
+.production {
+	@extend %section_padding;
+	background-color: $bg_main_gray;
+	.row { max-width: 900px; }
+	ul img {
+		display: block;
+		margin: 0 auto;
+	}
+	li {
+		margin-bottom: 25px;
+	}
+}
+
+.p_products .details {
+	@extend %section_padding;
+}
+
+.types {
+	@extend %section_padding_bottom;
+	.type_details {
+		ul { margin: 20px 0; }
+		li {
+			border-top: 1px solid $bg_main_blue;
+			line-height: 250%;
+		}
+		.description {
+			display: block;
+			margin: 20px 0;
+		}
+		.label,
+		.value { display: inline-block; }
+		.label {
+			min-width: 30%;
+		}
+	}
+}
+
+.scheme_wrapper {
+	position: relative;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.scheme {
+	position: relative;
+	min-width: 700px;
+	.scheme_image {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		@include opacity(0);
+		@include transition(all 0.2s ease);
+		&.active {
+			position: relative;
+			z-index: 1;
+			@include opacity(1);
+			@include transition(all 0.2s ease);
+		}
+	}
+	.additional {
+		position: absolute;
+		z-index: 2;
+		width: 48%;
+		left: 0;
+		top: 20%;
+		li {
+			position: relative;
+			display: inline-block;
+			width: 50%;
+			margin: 0 0 38%;
+		}
+	}
+	.description {
+		position: absolute;
+		width: 30%;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.features {
+	@extend %section_padding;
+	font-size: 88.888%;
+	.s_title {
+		margin-top: 0;
+	}
+}
+
+.instaling_errors {
+	padding: 50px 0;
+	font-size: 88.888%;
+	p {
+		padding: 18px 0;
+		border-top: 4px solid $bg_main_blue;
+		+ p {
+			border-top-width: 1px;
+		}
+	}
+}
+

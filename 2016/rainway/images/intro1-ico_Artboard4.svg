@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 516.2 416.3" enable-background="new 0 0 516.2 416.3" xml:space="preserve">
+<g>
+	<g>
+		<ellipse fill="#F6F7F8" cx="260.5" cy="321.6" rx="200" ry="76.9"/>
+	</g>
+	<ellipse fill="#353F49" cx="260.5" cy="304.4" rx="129.5" ry="60"/>
+	<rect x="131" y="136.4" fill="#353F49" width="259" height="168"/>
+	<g>
+		<path fill="#F6F7F8" d="M260.5,255.4c-71.5,0-129.5-26.9-129.5-60v53c0,33.1,58,60,129.5,60s129.5-26.9,129.5-60v-53
+			C390,228.6,332,255.4,260.5,255.4z"/>
+	</g>
+	<g>
+		<ellipse fill="#F6F7F8" cx="260.5" cy="136.4" rx="129.5" ry="60"/>
+	</g>
+	<rect x="147" y="80.4" fill="#353F49" width="14" height="72"/>
+	<rect x="191" y="109.4" fill="#353F49" width="14" height="68"/>
+	<rect x="191" y="28.4" fill="#353F49" width="14" height="68"/>
+	<rect x="235" y="124.4" fill="#353F49" width="14" height="65"/>
+	<rect x="235" y="21.4" fill="#353F49" width="14" height="65"/>
+	<rect x="279" y="124.4" fill="#353F49" width="14" height="65"/>
+	<rect x="279" y="21.4" fill="#353F49" width="14" height="65"/>
+	<rect x="323" y="109.4" fill="#353F49" width="14" height="66"/>
+	<rect x="323" y="29.4" fill="#353F49" width="14" height="66"/>
+	<rect x="367" y="76.4" fill="#353F49" width="14" height="72"/>
+</g>
+</svg>
