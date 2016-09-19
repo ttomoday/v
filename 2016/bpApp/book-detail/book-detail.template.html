@@ -1,0 +1,30 @@
+<bp-header></bp-header>
+<div class="container book-detail-container">
+  <div class="row">
+    <div class="section col s3">
+      <div class="book-images">
+        <img ng-src="{{$ctrl.book.image}}" class="img-responsive" />
+      </div>
+    </div>
+    <div class="section col s5">
+      <h4>{{$ctrl.book.name}}</h4>
+      <h5>Written by: {{$ctrl.book.author}}</h5>
+      <div class="chip" ng-repeat="tag in $ctrl.book.tags">
+        {{tag}}
+      </div>
+      <p>
+        {{$ctrl.book.description}}
+      </p>
+      <ul>
+        <li ng-repeat="format in $ctrl.book.formats">
+          {{format}}
+        </li>
+      </ul>
+      <a class="waves-effect waves-light btn red darken-1 white-text" href="#!">СКАЧАТИ</a>
+    </div>
+    <div class="section col s4">
+      <bp-latest></bp-latest>
+    </div>
+      </div>
+</div>
+<bp-footer></bp-footer>

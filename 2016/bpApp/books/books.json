@@ -1,0 +1,122 @@
+[
+    {
+        "id": "b_example",
+        "year": 2015,
+        "imageUrl": "img/books/b001.jpg",
+        "name": "Майсетер та Маргарита",
+        "author": "Lermontoww",
+        "tags": ["класика", "лорем"],
+        "stars": 2,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 2018,
+        "imageUrl": "img/books/b002.jpg",
+        "name": "Saint Porno",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "чтиво", "лорем"],
+        "stars": 4,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 2015,
+        "imageUrl": "img/books/b003.jpg",
+        "name": "Асканія",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "чтиво", "лорем"],
+        "stars": 4,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 1996,
+        "imageUrl": "img/books/b004.jpg",
+        "name": "Відважна Мулан",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "чтиво", "лорем"],
+        "stars": 2,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 1785,
+        "imageUrl": "img/books/b005.jpg",
+        "name": "Кібер Панк",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "лорем"],
+        "stars": 4,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 1635,
+        "imageUrl": "img/books/b006.jpg",
+        "name": "Віра. Надія. Любов",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "чтиво", "лорем"],
+        "stars": 4,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 2014,
+        "imageUrl": "img/books/b007.jpg",
+        "name": "Сьогодні я дороблю",
+        "author": "Lermontoww",
+        "tags": ["фентезі", "чтиво", "лорем"],
+        "stars": 1,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 2015,
+        "imageUrl": "img/books/b004.jpg",
+        "name": "Встигнути за 5хв",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "чтиво", "лорем"],
+        "stars": 4,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 2019,
+        "imageUrl": "img/books/b002.jpg",
+        "name": "Вже вечір вечоріє",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "чтиво"],
+        "stars": 5,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 1998,
+        "imageUrl": "img/books/b006.jpg",
+        "name": "Люблю не спати",
+        "author": "Lermontoww",
+        "tags": ["класика", "лорем"],
+        "stars": 4,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 1995,
+        "imageUrl": "img/books/b007.jpg",
+        "name": "Як здати проект вчасно і не зійти з розуму",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "лорем"],
+        "stars": 4,
+        "price": "Безплатно"
+    },
+    {
+        "id": "b_example",
+        "year": 2015,
+        "imageUrl": "img/books/b001.jpg",
+        "name": "Як відновити печінку?",
+        "author": "Lermontoww",
+        "tags": ["класика", "фентезі", "чтиво", "лорем"],
+        "stars": 3,
+        "price": "Безплатно"
+    }
+]

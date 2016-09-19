@@ -1,0 +1,60 @@
+<bp-header></bp-header>
+<div class="parallax-container">
+    <div parallax>
+      <img src="img/parallax/parallax1.jpg">
+      <div class="container">
+        <h3>The supersuper website</h3>
+      </div>      
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="section col s6 l3">
+      <div input-field>
+          <input ng-model="$ctrl.query" placeholder="Search:" />
+      </div>
+    </div>
+    <div class="section col s6 l3 right-align">
+      <div input-field>
+          <select class="" ng-model="$ctrl.orderProp" material-select>
+              <option value="name">По алфавіту</option>
+              <option value="age">Найновіші</option>
+          </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="section col s12 m6 l4" ng-repeat="book in $ctrl.books | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+        <h5>{{book.name}}</h5>
+        <div class="item-info-container">
+          <a href="#!/books/{{book.id}}" class="item-info-field">
+            <img ng-src="{{book.imageUrl}}" class="img-responsive" alt="{{book.name}}" />
+          </a>
+          <div class="item-info-field">
+            <div>
+              <i class="tiny material-icons orange darken-1 grey-text text-lighten-5" ng-repeat="i in $ctrl.getNumber(book.stars) track by $index">star</i>
+            </div>                
+            <div class="chip" ng-repeat="tag in book.tags">
+              {{tag}}
+            </div>
+            <div>
+              <h5>{{book.price}}</h5>
+            </div>
+            <a class="waves-effect waves-light btn red darken-1 white-text" href="#!/books/{{book.id}}">СКАЧАТИ</a>
+          </div>
+        </div>    
+    </div>
+    <!-- <pagination
+      page="1"
+      page-size="10"
+      total="200"
+      show-prev-next="true"
+      use-simple-prev-next="false"
+      dots="...."
+      hide-if-empty="false"
+      adjacent="2"
+      scroll-top="false"
+      pagination-action="changePage(page)" /> -->
+    </div>
+</div>
+<bp-footer></bp-footer>

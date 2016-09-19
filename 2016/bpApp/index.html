@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="bpApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Portal</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="app.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/checkmark/checkmark.filter.js"></script>
+    <script src="core/book/book.module.js"></script>
+    <script src="core/book/book.service.js"></script>
+    <script src="bp-header/bp-header.module.js"></script>
+    <script src="bp-header/bp-header.component.js"></script>
+    <script src="bp-footer/bp-footer.module.js"></script>
+    <script src="bp-footer/bp-footer.component.js"></script>
+    <script src="book-list/book-list.module.js"></script>
+    <script src="book-list/book-list.component.js"></script>
+    <script src="book-detail/book-detail.module.js"></script>
+    <script src="book-detail/book-detail.component.js"></script>
+    <script src="bp-latest/bp-latest.module.js"></script>
+    <script src="bp-latest/bp-latest.component.js"></script>
+    <script src="bp-genres/bp-genres.module.js"></script>
+    <script src="bp-genres/bp-genres.component.js"></script>
+    <script src="bp-authors/bp-authors.module.js"></script>
+    <script src="bp-authors/bp-authors.component.js"></script>
+    <script src="bp-news/bp-news.module.js"></script>
+    <script src="bp-news/bp-news.component.js"></script>
+  </head>
+  <body>
+    <div class="view-container">
+      <div ng-view class="view-frame" autoscroll="true"></div>
+    </div>
+  </body>
+</html>
