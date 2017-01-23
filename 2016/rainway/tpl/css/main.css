@@ -1,7 +1,0 @@
-
-
-
-.contColorPick, .colorPickFromList {width: 100%; clear:both; display: inline-block;}
-.colorPick {width: 30px; height: 30px; display: block; border: 1px solid #ccc; float: left; margin: 0px 5px;}
-.colorPickSmall {width: 20px; height: 20px; display: block; border: 1px solid #ccc; float: left; margin: 0px 2px;}
-.colorPickSmall.__activeColor, .colorPick.__activeColor {border: 2px solid #bbb;}
